@@ -50,4 +50,24 @@
     <string name="tips7_par2">Sampah B3 memiliki sifat mudah meledak dan beracun, oleh karena itu kita harus memilah dan menandainya, lalu dibuang pada tempat pembuangan akhir yang memiliki fasilitas pengolahan limbah B3.</string>
 
 
+    <string-array name="organik_name">
+        <item>Sampah sisa makanan</item>
+        <item>Sampah sisa sayur</item>
+        <item>Sampah kotoran hewan</item>
+        <item>Sampah kulit biji-bijian</item>
+        <item>Sampah daun-daun kering</item>
+        <item>Sampah sisa kayu</item>
+        <item>Sampah kertas</item>
+    </string-array>
+
+    <integer-array name="data_organik_photo">
+        <item>@drawable/organik_sisa_makan</item>
+        <item>@drawable/organik_sisa_sayur</item>
+        <item>@drawable/organik_kotoran</item>
+        <item>@drawable/organik_biji</item>
+        <item>@drawable/organik_daun</item>
+        <item>@drawable/organik_sisa_kayu</item>
+        <item>@drawable/organik_sisa_kertas</item>
+    </integer-array>
+
 </resources>
