@@ -1,0 +1,53 @@
+<resources>
+    <string name="app_name">Waste Classification Apps</string>
+    <string name="classification">Klasifikasi Sampah</string>
+    <string name="organik">Organik</string>
+    <string name="desc_organik">Sampah yang berasal dari makhluk hidup</string>
+    <string name="anorganik">Anorganik</string>
+    <string name="desc_anorganik">Sampah yang sulit untuk terurai</string>
+    <string name="b3">B3</string>
+    <string name="desc_b3">Bahan Berbahaya Beracun</string>
+    <string name="tv_tips"><![CDATA[Info & Tips Cara Memilah Sampah]]></string>
+    <string name="splash_desc">know your waste!</string>
+    <string name="options">Options</string>
+    <string name="sampah_organik">Sampah Organik</string>
+    <string name="sampah_anorganik">Sampah Anorganik</string>
+    <string name="sampah_b3">Sampah B3</string>
+    <string name="search_anorganik">Cari sampah anorganik</string>
+    <string name="search_organik">Cari sampah organik</string>
+    <string name="search_b3">Cari sampah B3</string>
+    <string name="app_version">App Version</string>
+    <string name="version">1.1.0</string>
+    <string name="change_theme">Change Theme</string>
+    <string name="exit_app">Exit App</string>
+    <string name="switch_theme">Change</string>
+
+    <string name="desc_tips1">Pisahkan sampah organik dan anorganik</string>
+    <string name="tips1_par1">Kurangnya pemilahan sampah organik dan anorganik khususnya pada lingkungan rumah tangga merupakan masalah yang masih terjadi di kota besar maupun kecil di Indonesia. Sampah yang tidak dipilah bisa menyebabkan lingkungan kotor dan bisa menjadi sarang penyakit yang akan menimbulkan masalah baru bagi anda.</string>
+    <string name="tips1_par2">Jadi sebisa mungkin pisahkan sampah anda, anda bisa membuat keranjang pembuangan sampah dirumah anda dengan tanda warna hijau sebagai tempat sampah untuk jenis organik, sampah organik merupakan sampah yang berasal dari makhluk hidup. Contohnya seperti sisa makanan, sisa sayur, daun kering dll. Sedangkan kuning untuk sampah anorganik. Sampah anorganik merupakan sampah yang sulit terurai, seperti plastik, botol, besi, dll. Walaupun sulit terurai, tetapi anda harus tetap memilahnya karena bisa dimanfaatkan kembali.</string>
+
+    <string name="desc_tips2">Membagi sampah anorganik menjadi 2 jenis</string>
+    <string name="tips2_par1">Untuk lebih memudahkannya lagi dalam pemilahan sampah, pisahkan antar sampah anorganik keras dan lunak. Anorganik keras antara lain, plat logam, pecahan keramik, kaca dan sampah keras lain yang sulit diuraikan/dihancurkan. Lalu pisahkan juga sampah anorganik lunak seperti, sterofoam, kantong kresek, bekas plastik pembungkusan makanan, dll.</string>
+    <string name="tips2_par2">Dengan cara membagi kedua jenis sampah anorganik ini, anda akan lebih mudah ketika ingin mendaur ulangnya dan juga memudahkan bank sampah dalam mengelolanya.</string>
+
+    <string name="desc_tips3">Mendaur ulang sampah anorganik</string>
+    <string name="tips3_par1">Cara yang paling efektif dalam mengolah sampah anorganik adalah melakukan daur ulang. seperti membuat kerajinan dari sisa sisa kayu, lalu bekas botol-botol plastik yang bisa dijadikan pernak-pernik dan aksesoris dirumah.</string>
+    <string name="tips3_par2">Memanfaatkan sampah anorganik menjadi barang berguna lainnya adalah cara memilah sampah yang bijak agar nilai suatu barang menjadi lebih bermanfaat. selain itu juga dapat mengurangi pencemaran lingkungan, karna dengan mengolahnya menjadi barang yang berguna dapat membuat lingkungan bebas dari sampah anorganik.</string>
+
+    <string name="desc_tips4">Menggunakan kembali sampah yang masih bisa dipakai</string>
+    <string name="tips4_par1">Reuse, atau berarti menggunakan kembali sampah yang masih dapat digunakan untuk fungsi yang sama maupun berbeda. Dengan melakukan reuse kita dapat membuat cara baru untuk menggunakan hal-hal yang seharusnya dibuang dan menjadi sampah. Seperti memanfaatkan kembali bekas wadah-wadah dari sampah anorganik menjadi kantong untuk membungkus barang yang dapat digunakan berulang-ulang, lalu botol bekas minuman bisa dijadikan sebagai tempat menyimpan kapas dan cotton bud.</string>
+
+    <string name="desc_tips5">Mengurangi penggunaan barang sekali pakai</string>
+    <string name="tips5_par1">Reduce atau upaya dalam mengurangi pemakaian barang sekali pakai yang berakhir menjadi sampah. Tindakan ini merupakan sikap peduli lingkungan yang berupaya mencegah ancaman kerusakan lingkungan, dengan melakukan reduce kita bisa mengurangi penggunaan barang yang berpotensi menjadi sampah. Kunci agar bisa menerapkan reduce adalah dengan cara menahan rasa ingin membeli barang tidak dibutuhkan yang nantinya akan menjadi tidak terpakai juga.</string>
+    <string name="tips5_par2">Pilihlah produk dengan kemasan yang dapat didaur ulang, hindari produk sekali pakai. Kita juga bisa menghindari membeli barang yang menghasilkan sampah dengan jumlah besar. Membiasakan diri dengan membeli produk yang bisa dipakai dan diisi ulang kembali.</string>
+
+    <string name="desc_tips6">Membuat pupuk dari sampah organik</string>
+    <string name="tips6_par1">Mengolah sampah organik menjadi pupuk kompos merupakan cara lainnya dalam mengolah sampah. Dengan membuatnya menjadi pupuk kompos, maka akan sangat mengurangi jumlah sampah organik yang akan dibuang ke tempat pembuangan akhir.</string>
+    <string name="tips6_par2">Sampah organik yang dapat dikompos antara lain; sisa makanan, kulit buah, sisa sayuran, potongan kayu, daun kering, kotoran hewan. Mengolah sampah organik menjadi pupuk juga dapat menutrisi tanah yang akan menghasilkan tanaman subur, dan juga dapat mengurangi efek gas rumah kaca.</string>
+
+    <string name="desc_tips7">Pilah sampah B3 dilingkungan rumah</string>
+    <string name="tips7_par1">B3 atau sampah bahan berbahaya beracun, walaupun biasanya dihasilkan oleh pihak-pihak industri, dilingkungan rumah juga dapat menghasilkan sampah jenis ini. Sudah jelas sampah ini sangat berbahaya dan perlu penanganan khusus untuk mengolahnya. Hal pertama yang harus dilakukan adalah memilahnya agar tidak tercampur dengan sampah lainnya. Contoh sampah B3 dilingkungan rumah adalah, bekas lampu bohlam, baterai bekas, botol bekas cairan pembersih, wadah bekas kosmetik, kaleng spray bekas, dan obat kadaluarsa.</string>
+    <string name="tips7_par2">Sampah B3 memiliki sifat mudah meledak dan beracun, oleh karena itu kita harus memilah dan menandainya, lalu dibuang pada tempat pembuangan akhir yang memiliki fasilitas pengolahan limbah B3.</string>
+
+
+</resources>

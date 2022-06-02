@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Users/Administrator/AndroidStudioProjects/WasteClassificationApps/app/src/main/res/drawable/background_info.xml" value="0.1135" />
+        <entry key="..\:/Users/Administrator/AndroidStudioProjects/WasteClassificationApps/app/src/main/res/drawable/ground_cam.xml" value="0.12" />
+        <entry key="..\:/Users/Administrator/AndroidStudioProjects/WasteClassificationApps/app/src/main/res/drawable/round_cam.xml" value="0.12" />
+        <entry key="..\:/Users/Administrator/AndroidStudioProjects/WasteClassificationApps/app/src/main/res/layout/activity_anorganik.xml" value="0.22" />
+        <entry key="..\:/Users/Administrator/AndroidStudioProjects/WasteClassificationApps/app/src/main/res/layout/activity_b3.xml" value="0.18" />
+        <entry key="..\:/Users/Administrator/AndroidStudioProjects/WasteClassificationApps/app/src/main/res/layout/activity_camera.xml" value="0.2" />
+        <entry key="..\:/Users/Administrator/AndroidStudioProjects/WasteClassificationApps/app/src/main/res/layout/activity_deatil_tips1.xml" value="0.2" />
+        <entry key="..\:/Users/Administrator/AndroidStudioProjects/WasteClassificationApps/app/src/main/res/layout/activity_detail_tips2.xml" value="0.2" />
+        <entry key="..\:/Users/Administrator/AndroidStudioProjects/WasteClassificationApps/app/src/main/res/layout/activity_detail_tips3.xml" value="0.2" />
+        <entry key="..\:/Users/Administrator/AndroidStudioProjects/WasteClassificationApps/app/src/main/res/layout/activity_detail_tips4.xml" value="0.13405797101449277" />
+        <entry key="..\:/Users/Administrator/AndroidStudioProjects/WasteClassificationApps/app/src/main/res/layout/activity_detail_tips5.xml" value="0.13405797101449277" />
+        <entry key="..\:/Users/Administrator/AndroidStudioProjects/WasteClassificationApps/app/src/main/res/layout/activity_detail_tips6.xml" value="0.13405797101449277" />
+        <entry key="..\:/Users/Administrator/AndroidStudioProjects/WasteClassificationApps/app/src/main/res/layout/activity_detail_tips7.xml" value="0.13405797101449277" />
+        <entry key="..\:/Users/Administrator/AndroidStudioProjects/WasteClassificationApps/app/src/main/res/layout/activity_main.xml" value="0.22" />
+        <entry key="..\:/Users/Administrator/AndroidStudioProjects/WasteClassificationApps/app/src/main/res/layout/activity_options.xml" value="0.22" />
+        <entry key="..\:/Users/Administrator/AndroidStudioProjects/WasteClassificationApps/app/src/main/res/layout/activity_organik.xml" value="0.25" />
+        <entry key="..\:/Users/Administrator/AndroidStudioProjects/WasteClassificationApps/app/src/main/res/layout/activity_result_cam.xml" value="0.18" />
+        <entry key="..\:/Users/Administrator/AndroidStudioProjects/WasteClassificationApps/app/src/main/res/layout/activity_splash.xml" value="0.1873873873873874" />
+        <entry key="..\:/Users/Administrator/AndroidStudioProjects/WasteClassificationApps/app/src/main/res/menu/option_menu.xml" value="0.1864864864864865" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>
