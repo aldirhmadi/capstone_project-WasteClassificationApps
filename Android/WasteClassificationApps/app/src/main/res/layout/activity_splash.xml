@@ -11,11 +11,12 @@
         android:layout_width="264dp"
         android:layout_height="362dp"
         android:layout_marginStart="20dp"
-        android:layout_marginTop="100dp"
+        android:layout_marginTop="116dp"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.403"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/img_splash" />
+        app:srcCompat="@drawable/img_logo_ala_afif" />
 
     <ProgressBar
         android:id="@+id/progressBar"
