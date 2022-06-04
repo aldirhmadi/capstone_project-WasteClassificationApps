@@ -1,7 +1,9 @@
 package com.example.wasteclassificationapps.activity
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.util.Log
 import android.widget.Toast
 import androidx.camera.core.CameraSelector
 import androidx.camera.core.ImageCapture
@@ -53,11 +55,16 @@ class CameraActivity : AppCompatActivity() {
                     }
 
                     override fun onImageSaved(output: ImageCapture.OutputFileResults) {
+                        Log.d("TAG", output.savedUri.toString())
                         Toast.makeText(
                             this@CameraActivity,
-                            "Berhasil mengambil gambar.",
+                            "Berhasil mengambil gambar." + output.savedUri.toString(),
                             Toast.LENGTH_SHORT
                         ).show()
+                        val intent = Intent(this@CameraActivity, ResultCamActivity::class.java).apply {
+                            putExtra("RESULT_IMAGE", output.savedUri.toString())
+                        }
+                        startActivity(intent)
                     }
                 }
             )
