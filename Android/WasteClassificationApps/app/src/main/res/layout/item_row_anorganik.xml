@@ -6,9 +6,9 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:layout_gravity="center"
+    android:layout_marginTop="4dp"
     android:layout_marginLeft="16dp"
     android:layout_marginRight="16dp"
-    android:layout_marginTop="4dp"
     android:layout_marginBottom="4dp"
     card_view:cardCornerRadius="10dp">
 
@@ -18,7 +18,7 @@
         android:padding="8dp">
 
         <ImageView
-            android:id="@+id/img_item_organik_photo"
+            android:id="@+id/img_item_anorganik_photo"
             android:layout_width="135dp"
             android:layout_height="96dp"
             android:layout_marginStart="8dp"
@@ -30,7 +30,7 @@
             tools:src="@tools:sample/avatars" />
 
         <TextView
-            android:id="@+id/tv_organik_name"
+            android:id="@+id/tv_anorganik_name"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="8dp"
@@ -40,9 +40,9 @@
             android:textStyle="bold"
             card_view:layout_constraintEnd_toEndOf="parent"
             card_view:layout_constraintHorizontal_bias="0.086"
-            card_view:layout_constraintStart_toEndOf="@+id/img_item_organik_photo"
-            card_view:layout_constraintTop_toTopOf="@+id/img_item_organik_photo"
-            tools:text="@string/sampah_organik" />
+            card_view:layout_constraintStart_toEndOf="@+id/img_item_anorganik_photo"
+            card_view:layout_constraintTop_toTopOf="@+id/img_item_anorganik_photo"
+            tools:text="@string/sampah_anorganik" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 
 </androidx.cardview.widget.CardView>

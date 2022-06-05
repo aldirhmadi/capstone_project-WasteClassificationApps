@@ -10,7 +10,7 @@
         android:id="@+id/textView6"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="76dp"
+        android:layout_marginTop="60dp"
         android:text="@string/sampah_anorganik"
         android:textColor="@color/dark_green"
         android:textSize="24sp"
@@ -68,5 +68,15 @@
             android:src="@drawable/ic_search" />I
 
     </FrameLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_anorganik"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/fl_anorganik" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

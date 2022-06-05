@@ -70,4 +70,28 @@
         <item>@drawable/organik_sisa_kertas</item>
     </integer-array>
 
+
+    <string-array name="anorganik_name">
+        <item>Sampah kresek plastik</item>
+        <item>Sampah pecahan keramik</item>
+        <item>Sampah minuman kaleng</item>
+        <item>Kabel bekas</item>
+        <item>Sampah botol plastik</item>
+        <item>Sampah botol kaca</item>
+        <item>Besi bekas</item>
+        <item>Ban bekas</item>
+    </string-array>
+
+    <integer-array name="data_anorganik_photo">
+        <item>@drawable/anorganik_kresek</item>
+        <item>@drawable/anorganik_keramik</item>
+        <item>@drawable/anorganik_kaleng</item>
+        <item>@drawable/anorganik_kabel</item>
+        <item>@drawable/anorganik_botol_plastik</item>
+        <item>@drawable/anorganik_botol_kaca</item>
+        <item>@drawable/anorganik_besi</item>
+        <item>@drawable/anorganik_ban</item>
+
+    </integer-array>
+
 </resources>
