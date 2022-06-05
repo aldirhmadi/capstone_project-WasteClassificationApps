@@ -55,7 +55,7 @@
         app:layout_constraintTop_toTopOf="@+id/img_theme" />
 
     <ImageView
-        android:id="@+id/img_exit"
+        android:id="@+id/btn_img_exit"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="24dp"
@@ -75,8 +75,8 @@
         android:textSize="16sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.102"
-        app:layout_constraintStart_toEndOf="@+id/img_exit"
-        app:layout_constraintTop_toTopOf="@+id/img_exit" />
+        app:layout_constraintStart_toEndOf="@+id/btn_img_exit"
+        app:layout_constraintTop_toTopOf="@+id/btn_img_exit" />
 
     <com.google.android.material.switchmaterial.SwitchMaterial
         android:id="@+id/change_theme"
