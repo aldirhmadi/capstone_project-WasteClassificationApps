@@ -5,6 +5,7 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.ImageView
 import android.widget.TextView
+import android.widget.Toast
 import androidx.recyclerview.widget.RecyclerView
 import com.example.wasteclassificationapps.Anorganik
 import com.example.wasteclassificationapps.R
@@ -20,6 +21,9 @@ class ListAnorganikAdapter(private val listAnorganik: ArrayList<Anorganik>): Rec
         val (name, photo) = listAnorganik[position]
         holder.imgAnorganikPhoto.setImageResource(photo)
         holder.tvAnorganikName.text = name
+        holder.itemView.setOnClickListener {
+            Toast.makeText(holder.itemView.context, "Sampah Anorganik || " + listAnorganik[holder.adapterPosition].name, Toast.LENGTH_SHORT).show()
+        }
     }
 
     override fun getItemCount(): Int = listAnorganik.size

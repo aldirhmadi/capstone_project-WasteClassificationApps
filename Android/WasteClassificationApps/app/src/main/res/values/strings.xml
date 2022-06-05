@@ -91,7 +91,27 @@
         <item>@drawable/anorganik_botol_kaca</item>
         <item>@drawable/anorganik_besi</item>
         <item>@drawable/anorganik_ban</item>
+    </integer-array>
 
+
+    <string-array name="b3_name">
+        <item>Bekas kaleng aerosol</item>
+        <item>Sampah medis</item>
+        <item>Sampah sisa lem</item>
+        <item>Bekas wadah kosmetik</item>
+        <item>Baterai bekas</item>
+        <item>Sampah korek gas</item>
+        <item>Sampah pecahan lampu</item>
+    </string-array>
+
+    <integer-array name="data_b3_photo">
+        <item>@drawable/b3_aerosol</item>
+        <item>@drawable/b3_medis</item>
+        <item>@drawable/b3_lem</item>
+        <item>@drawable/b3_kosmetik</item>
+        <item>@drawable/b3_baterai</item>
+        <item>@drawable/b3_korek</item>
+        <item>@drawable/b3_lampu</item>
     </integer-array>
 
 </resources>
