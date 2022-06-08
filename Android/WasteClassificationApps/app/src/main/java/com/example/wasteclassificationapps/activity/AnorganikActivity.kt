@@ -42,4 +42,5 @@ class AnorganikActivity : AppCompatActivity() {
         val listAnorganikAdapter = ListAnorganikAdapter(list)
         rvAnorganik.adapter = listAnorganikAdapter
     }
+
 }
