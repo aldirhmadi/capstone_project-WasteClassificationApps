@@ -11,7 +11,7 @@
 
 2. Click the camera button on the dashboard page
 
-<img src="https://drive.google.com/uc?export=view&id=1KQgAMKSDw-apGpcTuSx0aJSklTp0Dk67" style="width: 150px; max-width: 100%; height: auto" title=" Click the camera button on the dashboard page" />
+<img src="https://drive.google.com/uc?export=view&id=1iCRUwqjCH_2cNn1EH6UMlDA1BcBA5Iuf" style="width: 150px; max-width: 100%; height: auto" title=" Click the camera button on the dashboard page" />
 
 3. Take picture of waste object
 
