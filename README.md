@@ -1,4 +1,4 @@
-<h3>Waste Classification Andorid App</h3>
+<h3>Waste Classification Android App</h3>
 <h1>CAPSTONE PROJECT by C22PC385</h1>
 
 <h2>How to Use The App</h2>
