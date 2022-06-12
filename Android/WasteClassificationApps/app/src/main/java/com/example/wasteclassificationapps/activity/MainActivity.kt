@@ -2,25 +2,27 @@ package com.example.wasteclassificationapps.activity
 
 import android.Manifest
 import android.content.Intent
+import android.content.Intent.ACTION_GET_CONTENT
 import android.content.pm.PackageManager
+import android.net.Uri
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.Menu
 import android.view.MenuItem
 import android.widget.Toast
+import androidx.activity.result.contract.ActivityResultContracts
 import androidx.core.app.ActivityCompat
 import androidx.core.content.ContextCompat
 import com.example.wasteclassificationapps.R
 import com.example.wasteclassificationapps.databinding.ActivityMainBinding
 import com.example.wasteclassificationapps.infoTips.*
+import com.example.wasteclassificationapps.uriToFile
 
 class MainActivity : AppCompatActivity() {
 
     private lateinit var binding: ActivityMainBinding
 
     companion object {
-        const val CAMERA_RESULT = 200
-
         private val REQUIRED_PERMISSIONS = arrayOf(Manifest.permission.CAMERA)
         private const val REQUEST_CODE_PERMISSIONS = 10
     }
@@ -126,5 +128,6 @@ class MainActivity : AppCompatActivity() {
         val intent = Intent(this, CameraActivity::class.java)
         startActivity(intent)
     }
+
 
 }

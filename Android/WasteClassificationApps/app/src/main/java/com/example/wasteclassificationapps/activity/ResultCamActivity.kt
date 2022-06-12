@@ -1,66 +1,92 @@
 package com.example.wasteclassificationapps.activity
 
+import android.content.Intent
+import android.graphics.BitmapFactory
 import android.net.Uri
 import android.os.Bundle
-import android.util.Log
-import android.view.View
-import android.widget.ImageView
+import androidx.activity.result.contract.ActivityResultContracts
 import androidx.appcompat.app.AppCompatActivity
-import com.example.wasteclassificationapps.R
-import com.example.wasteclassificationapps.api.ApiConfiguration
-import com.example.wasteclassificationapps.api.ResponseImageApi
+import com.bumptech.glide.Glide
+import com.bumptech.glide.request.RequestOptions
 import com.example.wasteclassificationapps.databinding.ActivityResultCamBinding
-import okhttp3.MultipartBody
-import retrofit2.Call
-import retrofit2.Callback
-import retrofit2.Response
-
+import com.example.wasteclassificationapps.uriToFile
+import java.io.File
 
 class ResultCamActivity : AppCompatActivity() {
+
     private lateinit var binding: ActivityResultCamBinding
+    private var getImage: File? = null
+
+    companion object {
+        const val EXTRA_FILE = "extra_file"
+        const val EXTRA_GALLERY = "extra_gallery"
+        const val REQUEST_GALLERY = "request_gallery"
+    }
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = ActivityResultCamBinding.inflate(layoutInflater)
         setContentView(binding.root)
         supportActionBar?.title = "Result"
 
-        val imagePath = intent.getStringExtra("RESULT_IMAGE")
+        val myImage = intent.getSerializableExtra(EXTRA_FILE) as File
+        getImage = myImage
+        val result = BitmapFactory.decodeFile(myImage.path)
+        Glide.with(this)
+            .asBitmap()
+            .load(result)
+            .apply(RequestOptions().override(600, 1200))
+            .into(binding.previewImageView)
 
-        val imgbt =
-            findViewById<View>(R.id.previewImageView) as ImageView
+        binding.predictButton.setOnClickListener {
+            val detailIntent = Intent(this@ResultCamActivity, PredictResultActivity::class.java)
+            detailIntent.putExtra(PredictResultActivity.EXTRA_IMAGE, myImage)
+            startActivity(detailIntent)
+            finish()
+        }
 
-        val uri = Uri.parse(imagePath)
-        imgbt.setImageURI(uri)
-
-//        actionPostImage()
+        binding.retakeButton.setOnClickListener {
+            val intent = Intent(this, CameraActivity::class.java)
+            startActivity(intent)
+            finish()
+        }
     }
-//
-//    private fun actionPostImage() {
-//        binding.btnTouchAction.setOnClickListener {
-//            postImageApi()
-//        }
-//    }
-//
-//    private fun postImageApi() {
-//        val image: MultipartBody.Part = MultipartBody.Part.createFormData(
-//            "RESULT_IMAGE")
-//        val start = ApiConfiguration().getImageApi().imageFromApi(image)
-//        start.enqueue(object : Callback<ResponseImageApi>{
-//            override fun onResponse(
-//                call: Call<ResponseImageApi>,
-//                response: Response<ResponseImageApi>
-//            ) {
-//                val imageApi = response.body()
-//                binding.resultType.text = imageApi!!.type
-//                binding.resultDesc.text = imageApi.desc
-//                binding.resultDo.text = imageApi.does
-//                binding.resultDont.text = imageApi.dont
-//                binding.resultExample.text = imageApi.example
-//                binding.resultImpact.text = imageApi.impact
-//            }
-//            override fun onFailure(call: Call<ResponseImageApi>, t: Throwable) {
-//                Log.e("Gagal memuat", t.message.toString())
-//            }
-//        })
-//    }
+
+    private fun startCameraX() {
+        val intent = Intent(this, CameraActivity::class.java)
+        startActivity(intent)
+    }
+
+    private val launcherIntentGallery = registerForActivityResult(
+        ActivityResultContracts.StartActivityForResult()
+    ) { result ->
+        if (result.resultCode == RESULT_OK) {
+            val selectedImg: Uri = result.data?.data as Uri
+            val myFile = uriToFile(selectedImg, this@ResultCamActivity)
+            val galleryIntent = Intent(this, ResultCamActivity::class.java)
+            galleryIntent.putExtra(ResultCamActivity.EXTRA_GALLERY, selectedImg)
+            galleryIntent.putExtra(ResultCamActivity.REQUEST_GALLERY, 1)
+            startActivity(galleryIntent)
+        }
+    }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

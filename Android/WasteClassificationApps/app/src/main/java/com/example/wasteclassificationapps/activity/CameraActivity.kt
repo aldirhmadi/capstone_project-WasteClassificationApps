@@ -11,20 +11,14 @@ import androidx.camera.core.ImageCaptureException
 import androidx.camera.core.Preview
 import androidx.camera.lifecycle.ProcessCameraProvider
 import androidx.core.content.ContextCompat
-import com.example.wasteclassificationapps.api.ApiConfiguration
-import com.example.wasteclassificationapps.api.ResponseImageApi
 import com.example.wasteclassificationapps.createFile
 import com.example.wasteclassificationapps.databinding.ActivityCameraBinding
-import okhttp3.MultipartBody
-import retrofit2.Call
-import retrofit2.Callback
-import retrofit2.Response
 
 class CameraActivity : AppCompatActivity() {
 
     private lateinit var binding: ActivityCameraBinding
 
-    private var imageCapture:ImageCapture? = null
+    private var imageCapture: ImageCapture? = null
     private var cameraSelector: CameraSelector = CameraSelector.DEFAULT_BACK_CAMERA
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -35,49 +29,40 @@ class CameraActivity : AppCompatActivity() {
 
         binding.captureImage.setOnClickListener { takePhoto() }
         binding.switchCamera.setOnClickListener {
-            cameraSelector = if (cameraSelector == CameraSelector.DEFAULT_BACK_CAMERA) CameraSelector.DEFAULT_FRONT_CAMERA
-            else CameraSelector.DEFAULT_BACK_CAMERA
+            cameraSelector =
+                if (cameraSelector.equals(CameraSelector.DEFAULT_BACK_CAMERA)) CameraSelector.DEFAULT_FRONT_CAMERA
+                else CameraSelector.DEFAULT_BACK_CAMERA
             startCamera()
         }
 
     }
 
-    private fun takePhoto(){
+    private fun takePhoto() {
         val imageCapture = imageCapture ?: return
-        val photoFile = createFile(application)
-        val outputOptions = ImageCapture.OutputFileOptions.Builder(photoFile).build()
-            imageCapture.takePicture(
-                outputOptions,
-                ContextCompat.getMainExecutor(this),
-                object : ImageCapture.OnImageSavedCallback {
-                    override fun onError(exc: ImageCaptureException) {
-                        Toast.makeText(
-                            this@CameraActivity,
-                            "Gagal mengambil gambar",
-                            Toast.LENGTH_SHORT
-                        ).show()
-                    }
 
-                    override fun onImageSaved(output: ImageCapture.OutputFileResults) {
-                        Log.d("TAG", output.savedUri.toString())
-                        Toast.makeText(
-                            this@CameraActivity,
-                            "Berhasil mengambil gambar." + output.savedUri.toString(),
-                            Toast.LENGTH_SHORT
-                        ).show()
-                        val intent = Intent(this@CameraActivity, ResultCamActivity::class.java).apply {
-                            putExtra("RESULT_IMAGE", output.savedUri.toString())
-                        }
-                        startActivity(intent)
-                    }
+        val imgFile = createFile(application)
+
+        val outputOptions = ImageCapture.OutputFileOptions.Builder(imgFile).build()
+        imageCapture.takePicture(
+            outputOptions,
+            ContextCompat.getMainExecutor(this),
+            object : ImageCapture.OnImageSavedCallback {
+                override fun onError(exc: ImageCaptureException) {
+                    Toast.makeText(
+                        this@CameraActivity,
+                        "Failed to take picture",
+                        Toast.LENGTH_SHORT
+                    ).show()
                 }
-            )
-    }
 
-    private fun postImage() {
-
-
-
+                override fun onImageSaved(output: ImageCapture.OutputFileResults) {
+                    val sendImageResultIntent = Intent(this@CameraActivity, ResultCamActivity::class.java)
+                    sendImageResultIntent.putExtra(ResultCamActivity.EXTRA_FILE, imgFile)
+                    startActivity(sendImageResultIntent)
+                    finish()
+                }
+            }
+        )
     }
 
     private fun startCamera() {

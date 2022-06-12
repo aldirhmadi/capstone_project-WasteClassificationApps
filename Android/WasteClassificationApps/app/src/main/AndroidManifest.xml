@@ -6,6 +6,10 @@
     <uses-feature android:name="android.hardware.camera" />
 
     <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"
+        android:maxSdkVersion="18" />
 
     <application
         android:allowBackup="true"
@@ -17,6 +21,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.WasteClassificationApps"
         tools:targetApi="31">
+        <activity
+            android:name=".activity.PredictResultActivity"
+            android:exported="false" />
         <activity
             android:name=".infoTips.DetailTips7Activity"
             android:exported="false" />

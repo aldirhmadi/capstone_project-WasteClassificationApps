@@ -8,7 +8,7 @@ data class ResponseImageApi (
     val desc: String,
 
     @field:SerializedName("do")
-    val does: String,
+    val _do: String,
 
     @field:SerializedName("dont")
     val dont: String,
