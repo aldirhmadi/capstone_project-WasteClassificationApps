@@ -8,8 +8,7 @@ import retrofit2.http.Part
 
 interface ApiWaston {
     @Multipart
-    @POST("image")
-    fun imageFromApi(
-        @Part file:MultipartBody.Part
+    @POST("/")
+    fun imageFromApi(@Part image:MultipartBody.Part
     ): Call<ResponseImageApi>
 }

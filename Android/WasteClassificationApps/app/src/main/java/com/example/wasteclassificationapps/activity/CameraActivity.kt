@@ -11,8 +11,14 @@ import androidx.camera.core.ImageCaptureException
 import androidx.camera.core.Preview
 import androidx.camera.lifecycle.ProcessCameraProvider
 import androidx.core.content.ContextCompat
+import com.example.wasteclassificationapps.api.ApiConfiguration
+import com.example.wasteclassificationapps.api.ResponseImageApi
 import com.example.wasteclassificationapps.createFile
 import com.example.wasteclassificationapps.databinding.ActivityCameraBinding
+import okhttp3.MultipartBody
+import retrofit2.Call
+import retrofit2.Callback
+import retrofit2.Response
 
 class CameraActivity : AppCompatActivity() {
 
@@ -29,7 +35,7 @@ class CameraActivity : AppCompatActivity() {
 
         binding.captureImage.setOnClickListener { takePhoto() }
         binding.switchCamera.setOnClickListener {
-            cameraSelector = if (cameraSelector.equals(CameraSelector.DEFAULT_BACK_CAMERA)) CameraSelector.DEFAULT_FRONT_CAMERA
+            cameraSelector = if (cameraSelector == CameraSelector.DEFAULT_BACK_CAMERA) CameraSelector.DEFAULT_FRONT_CAMERA
             else CameraSelector.DEFAULT_BACK_CAMERA
             startCamera()
         }
@@ -38,9 +44,7 @@ class CameraActivity : AppCompatActivity() {
 
     private fun takePhoto(){
         val imageCapture = imageCapture ?: return
-
         val photoFile = createFile(application)
-
         val outputOptions = ImageCapture.OutputFileOptions.Builder(photoFile).build()
             imageCapture.takePicture(
                 outputOptions,
@@ -49,7 +53,7 @@ class CameraActivity : AppCompatActivity() {
                     override fun onError(exc: ImageCaptureException) {
                         Toast.makeText(
                             this@CameraActivity,
-                            "Failed to take picture",
+                            "Gagal mengambil gambar",
                             Toast.LENGTH_SHORT
                         ).show()
                     }
@@ -68,6 +72,12 @@ class CameraActivity : AppCompatActivity() {
                     }
                 }
             )
+    }
+
+    private fun postImage() {
+
+
+
     }
 
     private fun startCamera() {
