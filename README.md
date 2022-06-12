@@ -1,6 +1,8 @@
 <h3>Waste Classification Android App</h3>
 <h1>CAPSTONE PROJECT by C22PC385</h1>
 
+<h3>Get the apk <a href="https://drive.google.com/file/d/132B9r0wd9rhfb5vvOsvTNvKGi_koLXyj/view?usp=sharing" target="_blank">here</a>. <br>
+
 <h2>How to Use The App</h2>
 
 1. Open the app
@@ -24,7 +26,7 @@
 <img src="https://drive.google.com/uc?export=view&id=1FK7pWTvR3gs1qqe5h77iHni9yFXS6G70" style="width: 150px; max-width: 100%; height: auto" title=" See the result" />
 
 <h2>Machine Learning Part</h2>
-Download the dataset we used <a href="https://drive.google.com/file/d/1-3kxVWliKlJ5P_sovcmV5BjhCl5Eczr5/view?usp=sharing" target="_blank">here</a>. <br>
+Download the dataset we used <a href="https://drive.google.com/file/d/1g1mwALxZHuW0AhMtexD9llBfBBK_Gf1u/view?usp=sharing" target="_blank">here</a>. <br>
 See the Jupyter Notebook <a href="https://github.com/aldirhmadi/capstone_project-WasteClassificationApps/blob/main/Machine%20Learning/waston_inceptionv3.ipynb" target="_blank">here</a>. <br>
 Content of Jupyter Notebook:
 
