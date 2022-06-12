@@ -4,10 +4,24 @@
 <h2>How to Use The App</h2>
 
 1. Open the app
+
+<img src="https://drive.google.com/uc?export=view&id=1egO0nmA7xrUVpXeFJEMsOg_J5fIzWLS5" style="width: 150px; max-width: 100%; height: auto" title="Click to enlarge picture" />
+
 2. Click the camera button on the dashboard page
+
+<img src="https://drive.google.com/uc?export=view&id=1KQgAMKSDw-apGpcTuSx0aJSklTp0Dk67" style="width: 150px; max-width: 100%; height: auto" title="Click to enlarge picture" />
+
 3. Take picture of waste object
-4. Click predict button
+
+<img src="https://drive.google.com/uc?export=view&id=17mm-7mOf_fZc9JyFqRVZNvl6OYFiNfIT" style="width: 150px; max-width: 100%; height: auto" title="Click to enlarge picture" />
+
+4. Click the predict button
+
+<img src="https://drive.google.com/uc?export=view&id=1NDJ-PzV27ln5chl7iJbfH_DQmJYtMLyR" style="width: 150px; max-width: 100%; height: auto" title="Click to enlarge picture" />
+
 5. See the result
+
+<img src="https://drive.google.com/uc?export=view&id=1FK7pWTvR3gs1qqe5h77iHni9yFXS6G70" style="width: 150px; max-width: 100%; height: auto" title="Click to enlarge picture" />
 
 <h2>Machine Learning Part</h2>
 Download the dataset we used <a href="https://drive.google.com/file/d/1-3kxVWliKlJ5P_sovcmV5BjhCl5Eczr5/view?usp=sharing" target="_blank">here</a>. <br>
