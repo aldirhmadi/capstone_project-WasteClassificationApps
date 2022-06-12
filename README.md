@@ -1,7 +1,7 @@
 <h3>Waste Classification Android App</h3>
 <h1>CAPSTONE PROJECT by C22PC385</h1>
 
-<h3>Get the apk <a href="https://drive.google.com/file/d/132B9r0wd9rhfb5vvOsvTNvKGi_koLXyj/view?usp=sharing" target="_blank">here</a>. <br>
+<h3>Get the apk <a href="https://drive.google.com/file/d/1Hr2_mPYRoH7WTYETjn0_DJR9H_Eh7bXv/view?usp=sharing" target="_blank">here</a>. <br>
 
 <h2>How to Use The App</h2>
 
