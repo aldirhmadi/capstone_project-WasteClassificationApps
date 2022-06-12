@@ -4,8 +4,11 @@
 <h2>How to Use The App</h2>
 
 1. Open the app
-2. Take a picture of an object
-3. See the result
+2. Click the camera button on the dashboard page
+3. Take picture of waste object
+4. Click predict button
+5. See the result
+
 <h2>Machine Learning Part</h2>
 Download the dataset we used <a href="https://drive.google.com/file/d/1-3kxVWliKlJ5P_sovcmV5BjhCl5Eczr5/view?usp=sharing" target="_blank">here</a>. <br>
 See the Jupyter Notebook <a href="https://github.com/aldirhmadi/capstone_project-WasteClassificationApps/blob/main/Machine%20Learning/waston_inceptionv3.ipynb" target="_blank">here</a>. <br>
